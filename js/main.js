@@ -16,11 +16,10 @@ var addHere = document.getElementById('addHere')
 addHere.appendChild(newh1)
 addHere.appendChild(newImg)*/
 
-function todoList() {
-	var item = document.getElementById('todoInput').value
+function postComment() {
+	var item = document.getElementById('commentInput').value
 	var text = document.createTextNode(item)
-	var newItem = document.createElement("li")
+	var newItem = document.createElement("p")
 	newItem.appendChild(text)
-	document.getElementById('todoList').appendChild(newItem)
-
+	document.getElementById('commentList').appendChild(newItem)
 }
