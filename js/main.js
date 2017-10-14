@@ -19,6 +19,7 @@ addHere.appendChild(newImg)*/
 function postComment() {
 	var item = document.getElementById('commentInput').value
 	var text = document.createTextNode(item)
+	var image = document.getElementById('imageInput')
 	var newItem = document.createElement("p")
 	newItem.appendChild(text)
 	document.getElementById('commentList').appendChild(newItem)
