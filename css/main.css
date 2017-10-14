@@ -1,3 +1,29 @@
-.addedClass {
-	color: red;
+.body{
+	background-image: url("../img/paper.jpg");
 }
+
+
+.face {
+	width: 10%;
+}
+
+.input-image {
+	max-width: 50%;
+	margin-bottom: 50px;
+}
+
+div > h1{
+	font-family: 'Bungee Shade', cursive;
+	font-size: 50px;
+}
+
+#commentInput, #imgInput, #linkInput {
+	width: 300px;
+}
+
+p {
+	font-size: 20px;
+	font-family: 'News Cycle', sans-serif;
+	font-weight: bold;
+}
+

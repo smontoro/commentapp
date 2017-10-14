@@ -3,17 +3,27 @@
 <head>
 	<title>Comment App</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 </head>
-<body>
 
-	<h1>Comment App</h1>
+<body class="body">
+
+
+	<div class="text-center my-5">
+	<h1>The Good News Journal</h1>
+	<img src="img/face.gif" class="face mt-3">
+	<p class="pt-4">Find one article of good news every day and include the headline, link, and image.</p>
 	<form id="commentForm">
-		<input id="commentInput">
-		<input src="URL" id="imgInput">
-		<button type="button" onclick="postComment()">Click Me</button>
+		<input id="commentInput" placeholder="Title" class="text-center">
+		<input href="URL" id="linkInput" placeholder="Link" class="text-center">
+		<input src="URL" id="imgInput" placeholder="Image URL" class="text-center">
 	</form>
-	<div id="commentList">
-		
+	<button type="button" onclick="postComment()" class="btn btn-info my-3 px-5">Save Article</button>
+</div>
+
+	<div id="commentList" class="text-center mb-5">
 	</div>
 
 
