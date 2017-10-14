@@ -27,4 +27,14 @@ function postComment() {
 	newP.appendChild(text)
 	//adds the new p element with its text to the .commentList div
 	document.getElementById('commentList').appendChild(newP)
+
+
+	//stores the input URL in the "image" var
+	var image = document.getElementById("imgInput").value
+	//creates a new img element
+	var newImg = document.createElement("img")
+	//attached the var image input URL to the new img tag
+	newImg.setAttribute("src", image)
+	//adds the new image to the comment div
+	document.getElementById("commentList").appendChild(newImg)
 }
