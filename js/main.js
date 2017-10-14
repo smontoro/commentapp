@@ -17,10 +17,14 @@ addHere.appendChild(newh1)
 addHere.appendChild(newImg)*/
 
 function postComment() {
-	var item = document.getElementById('commentInput').value
-	var text = document.createTextNode(item)
-	var image = document.getElementById('imageInput')
-	var newItem = document.createElement("p")
-	newItem.appendChild(text)
-	document.getElementById('commentList').appendChild(newItem)
+	//stores the input comment in the "comment" var
+	var comment = document.getElementById('commentInput').value
+	//stores the input that's stored in the "comment" var in the "text" var
+	var text = document.createTextNode(comment)
+	//creates a new p element to store the text in
+	var newP = document.createElement("p")
+	//stores the text in the p element
+	newP.appendChild(text)
+	//adds the new p element with its text to the .commentList div
+	document.getElementById('commentList').appendChild(newP)
 }
